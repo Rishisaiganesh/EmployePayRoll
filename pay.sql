@@ -17,3 +17,9 @@ alter table EmpPayroll
 add Gender varchar(255);
 update EmpPayroll set Gender='Femail' where EmployeeName='rani' or EmployeeName = 'Madhu';
 update EmpPayroll set Gender='Male'where EmployeeName='Rishi';
+
+select sum(Salary) from EmpPayroll where Gender='Male'; 
+select avg(Salary) from EmpPayroll;
+select min(Salary) from EmpPayroll;
+select max(Salary) from EmpPayroll;
+select count(EmployeeId) from EmpPayroll;
