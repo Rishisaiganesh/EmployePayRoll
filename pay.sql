@@ -34,4 +34,7 @@ alter table EmpPayroll
 add Department varchar(255)
 update EmpPayroll set Department='Devpo' where EmployeeName='Rishi';
 
+alter table EmpPayroll
+add Basic_pay float;
+
 select * from EmpPayroll;
