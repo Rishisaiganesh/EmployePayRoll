@@ -7,3 +7,6 @@ EmployeeName varchar(255),
 Salary float,
 StartingDate Date
 );
+insert into EmpPayroll(EmployeeName, Salary, StartingDate)
+values('Rishi', 250000, convert (date,'2009-10-19'));
+select * from EmpPayroll;
