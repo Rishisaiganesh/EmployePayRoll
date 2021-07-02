@@ -28,13 +28,25 @@ alter table EmpPayroll
 add PhoneNumber varchar(255)
 update EmpPayroll set PhoneNumber='9090909090' where EmployeeName='Rishi';
 alter table EmpPayroll
-add Address varchar(255)
-update EmpPayroll set Address='IndiaAndhrapradesh' where EmployeeName='Rishi';
+add Addresss varchar(255)
+update EmpPayroll set Addresss='India' where EmployeeName='Rishi';
 alter table EmpPayroll
 add Department varchar(255)
-update EmpPayroll set Department='Devpo' where EmployeeName='Rishi';
+update EmpPayroll set Department='Digital Marketing' where EmployeeName='Rishi';
+
 
 alter table EmpPayroll
-add Basic_pay float;
+add Basicpay float;
+alter table EmpPayroll
+add Deductions float;
+alter table EmpPayroll
+add Taxable_Pay float;
+alter table EmpPayroll
+add Net_Pay float;
+alter table EmpPayroll
+add Income_Tax float;
 
+insert into EmpPayroll(EmployeeName,Basicpay,StartingDate,Gender,PhoneNumber,Addresss,Deducation,Taxable_Pay,Income_Tax,Net_Pay)
+values('Terisa', 50000, convert (date,'2010-8-19'), 'female', '2234567890', 'India',1000, 3000, 1000, 30000);
+update EmpPayroll set Department = 'Marketing' where EmployeeId=3
 select * from EmpPayroll;
