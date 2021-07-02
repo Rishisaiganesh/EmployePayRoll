@@ -34,7 +34,17 @@ alter table EmpPayroll
 add Department varchar(255)
 update EmpPayroll set Department='Devpo' where EmployeeName='Rishi';
 
+
 alter table EmpPayroll
 add Basic_pay float;
+alter table EmpPayroll
+add Deducation EmpPayroll;
+alter table EmpPayroll
+add TaxPay float;
+alter table EmpPayroll
+add NetPay float;
+alter table EmPayRoll
+add IncomeTax float;
+
 
 select * from EmpPayroll;
